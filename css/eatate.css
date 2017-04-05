@@ -1,0 +1,70 @@
+/* kinza */
+/* line 3, ../scss/eatate.scss */
+#main {
+  background-image: url(../img/re-estate.png);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #ccc;
+  width: 100%;
+  opacity: 1.0;
+  height: 650px;
+}
+/* line 14, ../scss/eatate.scss */
+#main .title {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 220px;
+  /* text-shadow: 1px 1px 50px #000; */
+}
+/* line 20, ../scss/eatate.scss */
+#main .title .title-h1 {
+  font-size: 70px;
+  line-height: 1.6;
+  text-align: center;
+  color: #333;
+  letter-spacing: 0.05em;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-weight: bold;
+}
+/* line 30, ../scss/eatate.scss */
+#main .title .title-year {
+  font-size: 20px;
+  line-height: 1.2;
+  margin-top: 20px;
+  text-align: center;
+  color: #333;
+  letter-spacing: 0.05em;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-weight: bold;
+}
+/* line 44, ../scss/eatate.scss */
+#main .title .title-skill {
+  font-size: 20px;
+  line-height: 1.2;
+  margin-top: 20px;
+  text-align: center;
+  color: #333;
+  letter-spacing: 0.05em;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-weight: bold;
+}
+
+/* line 60, ../scss/eatate.scss */
+.header {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #333;
+  letter-spacing: 0.05em;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+/* line 72, ../scss/eatate.scss */
+.header .bold {
+  font-weight: bold;
+  margin-left: 5px;
+}

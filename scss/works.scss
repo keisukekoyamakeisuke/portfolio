@@ -1,0 +1,702 @@
+@import "reset";
+
+*::selection{
+  background-color: #5fdaff;
+  color: #fff;
+} 
+
+*::-moz-selection {
+  background-color: #5fdaff;
+}
+
+@media screen and (min-width: 540px){
+
+
+
+body{
+  background-color: #fff;
+  min-height: 660px;
+  position: relative;
+}
+
+#gg{position: relative; display: none;}
+
+#cover{display: none; position: absolute; top: 0px; left:0px; z-index: 99; background-color: rgba(255,255,255,1); width: 100%; height: 100%; animation: coverani 1s ease forwards;}
+      @keyframes coverani{ 100%{width: 0%;}}
+      @-moz-keyframes coverani{ 100%{width: 0%;}}
+      @-webkit-keyframes coverani{ 100%{width: 0%;}}
+
+
+#main{
+	
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	opacity: 1.0;
+	height: 650px;
+
+	.header{
+		font-size: 12px;
+		line-height: 1.6;
+		color: #fff;
+		letter-spacing: 0.05em;
+		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+		font-weight: normal;
+		font-style: italic;
+		position: absolute;
+		top:10px;
+		right: 10px;
+
+		a{
+		  text-decoration: none;
+		}
+
+
+
+
+		    .bold{
+		    	font-weight: bold;
+		    	margin-left: 5px;
+		    }
+
+	}
+
+    .title{
+    	width: 80%;
+    	margin: 0 auto;
+    	padding-top: 220px;
+    	/* text-shadow: 1px 1px 50px #000; */
+		
+		.title-h1{
+			font-size: 70px;
+			line-height: 1.6;
+			text-align: center;
+			color: #fff;
+			letter-spacing: 0.05em;
+			font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+			font-weight: bold;
+		}
+
+		.title-year{
+			font-size: 20px;
+			line-height: 1.2;
+			margin-top: 20px;
+			text-align: center;
+			color: #fff;
+			letter-spacing: 0.05em;
+			font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+			font-weight: bold;
+
+		}
+
+		
+
+		.title-skill{
+			font-size: 20px;
+			line-height: 1.2;
+			margin-top: 20px;
+			text-align: center;
+			color: #fff;
+			letter-spacing: 0.05em;
+			font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+			font-weight: bold;
+		}
+
+	}
+
+}
+
+.contents{
+	margin: 0 auto;
+	margin-bottom: 300px;
+
+	.lead {
+		padding: 0 10%;
+		margin-top: 60px;
+		font-size: 28px;
+		line-height: 1.6;
+		color: #333333;
+		letter-spacing: 0.05em;
+		font-family: "Yu Gothic", YuGothic,  sans-serif;
+		font-weight: bold;
+
+    }
+
+    .paragraph{
+		margin: 60px 0;
+
+		.paragraph-body{
+			padding: 0 10%;
+			font-size: 20px;
+			line-height: 2.2;
+			margin-top: 60px;
+			color: #333;
+			letter-spacing: 0.05em;
+			font-family: "Yu Gothic", YuGothic,  sans-serif;
+			font-weight: normal;
+			/*text-align: justify;*/
+		}
+
+		.paragraph-img-100{
+			background-color: #f5f5f5;
+			margin-top: 60px;
+
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		.caption{
+			font-family: "Yu Gothic", YuGothic,  sans-serif;
+			font-weight: bold;
+			color: #999;
+			padding-top: 10px;
+			line-height: 2.2;
+			font-size: 14px;
+			text-align: center;
+			margin:0 auto;
+		}
+
+		.link {
+			text-align: center;
+			margin:0 auto;
+			padding: 60px 0 0px 0;
+
+			a{
+			  letter-spacing: 0.05em;
+			  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+			  font-weight: bold;
+			  color: #333;
+			  border-bottom: solid 2px #333;
+			  line-height: 2.2;
+			  font-size: 18px;
+			  padding: 0 0 10px 0;
+			}
+		}
+
+		.paragraph-img-c80{
+			margin: 0 10%;
+			background-color: #f5f5f5;
+			margin-top: 60px;
+
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.skill{
+	margin: 40px 10% 0 10%;
+
+	.h2-title{
+		font-size: 12px;
+		line-height: 1.6;
+		color: #fff;
+		letter-spacing: 0.05em;
+		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+		font-weight: normal;
+		font-style: italic;
+	}
+
+	.skill-list{
+		margin-top: 14px;
+
+		li{
+			list-style: none;
+			font-size: 24px;
+			line-height: 1.6;
+			color: #fff;
+			letter-spacing: 0.05em;
+			font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+			font-weight: normal;
+			font-style: italic;
+			display: inline-block;
+        }
+        
+        li :after{
+				content: "/";
+				margin: 0 5px;
+		}
+
+		a{
+			color: #fff;
+			background-color: rgba(255,245,0,0);
+			padding: 0px 0px;
+			transition-timing-function: cubic-bezier(0, 0, 0.50, 2.55);
+			transition-property: background-color padding;
+			transition-duration:0.1s;
+			transition-delay:0.1s;
+
+		}
+
+		a:hover{
+
+			background-color: rgba(255,245,0,0.5);
+			padding: 5px 5px;
+		}
+
+
+	}
+	
+}
+
+.works{
+	margin: 200px 10% 0 10%;
+
+	.h2-title{
+		font-size: 12px;
+		line-height: 1.6;
+		color: #333;
+		letter-spacing: 0.05em;
+		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+		font-weight: normal;
+		font-style: italic;
+	}
+
+	.works-list{
+		margin-top: 14px;
+
+		li{
+			list-style: none;
+			font-size: 32px;
+			line-height: 1.6;
+			color: #333;
+			letter-spacing: 0.05em;
+			font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+			font-weight: normal;
+			font-style: italic;
+			display: inline-block;
+        }
+        
+        li :after{
+				content: "/";
+				margin: 0 5px;
+		}
+
+		a{
+			color: #333;
+			background-color: rgba(255,245,0,0);
+			padding: 0px 0px;
+			transition-timing-function: cubic-bezier(0, 0, 0.50, 2.55);
+			transition-property: background-color padding;
+			transition-duration:0.1s;
+			transition-delay:0.1s;
+
+		}
+
+		a:hover{
+
+			background-color: rgba(255,245,0,0.5);
+			padding: 5px 5px;
+		}
+
+	}
+	
+}
+
+
+
+
+		
+.contact a{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 80px;
+	color: rgba(100,200,240,1);
+	background-color: rgba(225,235,245,1);
+	text-align: center;
+	text-decoration: none;
+	line-height: 1.6;
+	padding-top: 20px;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 24px;
+	transition-timing-function: cubic-bezier(0, 0, 0, 2.22);
+	transition-property: height background-color ;
+    transition-duration:0.1s;
+    transition-delay:0.1s;
+}
+
+
+.contact a:hover{
+		height: 90px;
+		background-color: rgba(230,240,250,1);
+	}
+
+
+a:visited{
+	color: #ffffff;
+}
+
+a{color: #ffffff;
+}
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 539px){
+
+	body{
+	  background-color: #fff;
+	  min-height: 660px;
+	  position: relative;
+	}
+
+	#gg{position: relative; display: none;}
+
+	#cover{display: none; position: absolute; top: 0px; left:0px; z-index: 99; background-color: rgba(255,255,255,1); width: 100%; height: 100%; animation: coverani 1s ease forwards;}
+	      @keyframes coverani{ 100%{width: 0%;}}
+	      @-moz-keyframes coverani{ 100%{width: 0%;}}
+	      @-webkit-keyframes coverani{ 100%{width: 0%;}}
+
+
+	#main{
+		
+
+		.header{
+			font-size: 12px;
+			line-height: 1.6;
+			color: #fff;
+			letter-spacing: 0.05em;
+			font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+			font-weight: normal;
+			font-style: italic;
+			position: absolute;
+			top:10px;
+			left: 10px;
+
+			a{
+			  text-decoration: none;
+			}
+
+                .bold{
+			    	font-weight: bold;
+			    	margin-left: 5px;
+			    }
+
+		}
+		
+
+	    .title{
+	    	width: 86%;
+	    	margin: 0 auto;
+	    	padding-top: 220px;
+	    	/* text-shadow: 1px 1px 50px #000; */
+			
+			.title-h1{
+				font-size: 48px;
+				line-height: 1.6;
+				text-align: center;
+				color: #fff;
+				letter-spacing: 0.05em;
+				font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+				font-weight: bold;
+			}
+
+			.title-year{
+				font-size: 20px;
+				line-height: 1.2;
+				margin-top: 20px;
+				text-align: center;
+				color: #fff;
+				letter-spacing: 0.05em;
+				font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+				font-weight: bold;
+
+			}
+
+			
+
+			.title-skill{
+				font-size: 20px;
+				line-height: 1.2;
+				margin-top: 20px;
+				text-align: center;
+				color: #fff;
+				letter-spacing: 0.05em;
+				font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+				font-weight: bold;
+			}
+
+		}
+
+	}
+
+	.contents{
+		margin: 0 auto;
+		margin-bottom: 220px;
+
+		.lead {
+			padding: 0 7%;
+			margin-top: 60px;
+			font-size: 28px;
+			line-height: 1.6;
+			color: #333333;
+			letter-spacing: 0.05em;
+			font-family: "Yu Gothic", YuGothic,  sans-serif;
+			font-weight: bold;
+
+	    }
+
+	    .paragraph{
+			margin: 60px 0;
+
+			.paragraph-body{
+				padding: 0 7%;
+				font-size: 18px;
+				line-height: 2.2;
+				margin-top: 60px;
+				color: #333;
+				letter-spacing: 0.05em;
+				font-family: "Yu Gothic", YuGothic, sans-serif;
+				font-weight: normal;
+				/*text-align: justify;*/
+			}
+
+			.paragraph-img-100{
+				background-color: #f5f5f5;
+				margin-top: 60px;
+
+				img{
+					width: 100%;
+					height: auto;
+				}
+			}
+
+			.caption{
+				font-family: "Yu Gothic", YuGothic,  sans-serif;
+				font-weight: bold;
+				color: #999;
+				padding-top: 10px;
+				line-height: 1.6;
+				font-size: 14px;
+				text-align: center;
+				margin:0 auto;
+				padding: 15px 7% 0;
+			}
+
+			.link {
+				text-align: center;
+				margin:0 auto;
+				padding: 60px 0 0px 0;
+
+				a{
+				  letter-spacing: 0.05em;
+				  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+				  font-weight: normal;
+				  color: #333;
+				  border-bottom: solid 2px #333;
+				  line-height: 2.2;
+				  font-size: 18px;
+				  padding: 0 0 10px 0;
+				}
+			}
+
+			.paragraph-img-c80{
+				margin: 0 7%;
+				background-color: #f5f5f5;
+				margin-top: 60px;
+
+				img{
+					width: 100%;
+					height: auto;
+				}
+			}
+
+	    }
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+	.skill{
+		margin: 40px 10% 0 10%;
+
+		.h2-title{
+			font-size: 12px;
+			line-height: 1.6;
+			color: #fff;
+			letter-spacing: 0.05em;
+			font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+			font-weight: normal;
+			font-style: italic;
+		}
+
+		.skill-list{
+			margin-top: 14px;
+
+			li{
+				list-style: none;
+				font-size: 24px;
+				line-height: 1.6;
+				color: #fff;
+				letter-spacing: 0.05em;
+				font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+				font-weight: normal;
+				font-style: italic;
+				display: inline-block;
+	        }
+	        
+	        li :after{
+					content: "/";
+					margin: 0 5px;
+			}
+
+			a{
+				color: #fff;
+				background-color: rgba(255,245,0,0);
+				padding: 0px 0px;
+				transition-timing-function: cubic-bezier(0, 0, 0.50, 2.55);
+				transition-property: background-color padding;
+				transition-duration:0.1s;
+				transition-delay:0.1s;
+
+			}
+
+			a:hover{
+
+				background-color: rgba(255,245,0,0.5);
+				padding: 5px 5px;
+			}
+
+
+		}
+		
+	}
+
+	.works{
+		margin: 120px 7% 0;
+
+		.h2-title{
+			font-size: 12px;
+			line-height: 1.6;
+			color: #333;
+			letter-spacing: 0.05em;
+			font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+			font-weight: normal;
+			font-style: italic;
+		}
+
+		.works-list{
+			margin-top: 14px;
+
+			li{
+				list-style: none;
+				font-size: 32px;
+				line-height: 1.6;
+				color: #333;
+				letter-spacing: 0.05em;
+				font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+				font-weight: normal;
+				font-style: italic;
+				display: inline-block;
+	        }
+	        
+	        li :after{
+					content: "/";
+					margin: 0 5px;
+			}
+
+			a{
+				color: #333;
+				background-color: rgba(255,245,0,0);
+				padding: 0px 0px;
+				transition-timing-function: cubic-bezier(0, 0, 0.50, 2.55);
+				transition-property: background-color padding;
+				transition-duration:0.1s;
+				transition-delay:0.1s;
+
+			}
+
+			a:hover{
+
+				background-color: rgba(255,245,0,0.5);
+				padding: 5px 5px;
+			}
+
+		}
+		
+	}
+
+
+    .contact a{
+		position: absolute;
+		bottom: 0px;
+		width: 100%;
+		height: 80px;
+		color: rgba(100,200,240,1);
+		background-color: rgba(225,235,245,1);
+		text-align: center;
+		text-decoration: none;
+		line-height: 1.6;
+		padding-top: 20px;
+		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+		font-weight: bold;
+		font-style: italic;
+		font-size: 24px;
+		transition-timing-function: cubic-bezier(0, 0, 0, 2.22);
+		transition-property: height background-color ;
+	    transition-duration:0.1s;
+	    transition-delay:0.1s;
+	}
+
+
+	.contact a:hover{
+		height: 90px;
+		background-color: rgba(230,240,250,1);
+	}
+
+
+	a:visited{
+		color: #ffffff;
+	}
+
+	a{color: #ffffff;
+	}
+
+}
+
+
+
+
+
+
+
+
+

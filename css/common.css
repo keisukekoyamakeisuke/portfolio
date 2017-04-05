@@ -1,0 +1,806 @@
+/* line 1, ../scss/_reset.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  vertical-align: 0;
+  overflow: auto;
+}
+
+/* line 10, ../scss/_reset.scss */
+body {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -o-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  overflow: hidden;
+}
+
+/* line 20, ../scss/_reset.scss */
+html, h1, h2, h3, h4, h5, dl, dt, dd, li, ul, ol, form, div, img, table, td, th, tr {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/*! sanitize.css v3.0.0 | CC0 1.0 Public Domain | github.com/10up/sanitize.css */
+/*
+ * Normalization
+ */
+/* line 33, ../scss/_reset.scss */
+audio:not([controls]) {
+  display: none;
+  /* Chrome 44-, iOS 8+, Safari 9+ */
+}
+
+/* line 37, ../scss/_reset.scss */
+button {
+  overflow: visible;
+  /* Internet Explorer 11- */
+  -webkit-appearance: button;
+  /* iOS 8+ */
+}
+
+/* line 42, ../scss/_reset.scss */
+details {
+  display: block;
+  /* Edge 12+, Firefox 40+, Internet Explorer 11-, Windows Phone 8.1+ */
+}
+
+/* line 46, ../scss/_reset.scss */
+html {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  /* Edge 12+, Internet Explorer 11- */
+  overflow-y: scroll;
+  /* All browsers without overlaying scrollbars */
+  -webkit-text-size-adjust: 100%;
+  /* iOS 8+ */
+}
+
+/* line 52, ../scss/_reset.scss */
+input {
+  -webkit-border-radius: 0;
+}
+
+/* line 56, ../scss/_reset.scss */
+input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  /* iOS 8+ */
+}
+
+/* line 60, ../scss/_reset.scss */
+input[type="number"] {
+  width: auto;
+  /* Firefox 36+ */
+}
+
+/* line 64, ../scss/_reset.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* Chrome 45+, Safari 9+ */
+}
+
+/* line 68, ../scss/_reset.scss */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+  /* Chrome 45+, Safari 9+ */
+}
+
+/* line 72, ../scss/_reset.scss */
+main {
+  display: block;
+  /* Android 4.3-, Internet Explorer 11-, Windows Phone 8.1+ */
+}
+
+/* line 76, ../scss/_reset.scss */
+pre {
+  overflow: auto;
+  /* Internet Explorer 11- */
+}
+
+/* line 80, ../scss/_reset.scss */
+progress {
+  display: inline-block;
+  /* Internet Explorer 11-, Windows Phone 8.1+ */
+}
+
+/* line 84, ../scss/_reset.scss */
+small {
+  font-size: 75%;
+  /* All browsers */
+}
+
+/* line 88, ../scss/_reset.scss */
+summary {
+  display: block;
+  /* Firefox 40+, Internet Explorer 11-, Windows Phone 8.1+ */
+}
+
+/* line 92, ../scss/_reset.scss */
+svg:not(:root) {
+  overflow: hidden;
+  /* Internet Explorer 11- */
+}
+
+/* line 96, ../scss/_reset.scss */
+template {
+  display: none;
+  /* Android 4.3-, Internet Explorer 11-, iOS 7-, Safari 7-, Windows Phone 8.1+ */
+}
+
+/* line 100, ../scss/_reset.scss */
+textarea {
+  overflow: auto;
+  /* Edge 12+, Internet Explorer 11- */
+}
+
+/* line 104, ../scss/_reset.scss */
+[hidden] {
+  display: none;
+  /* Internet Explorer 10- */
+}
+
+/*
+ * Universal inheritance
+ */
+/* line 112, ../scss/_reset.scss */
+*,
+:before,
+:after {
+  box-sizing: inherit;
+}
+
+/* line 118, ../scss/_reset.scss */
+* {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* line 123, ../scss/_reset.scss */
+:before,
+:after {
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
+
+/*
+ * Opinionated defaults
+ */
+/* specify the border style and width of all elements */
+/* line 137, ../scss/_reset.scss */
+*,
+:before,
+:after {
+  border-style: solid;
+  border-width: 0;
+}
+
+/* specify the core styles of all elements */
+/* line 146, ../scss/_reset.scss */
+* {
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+/* specify the root styles of the document */
+/* line 154, ../scss/_reset.scss */
+:root {
+  background-color: #ffffff;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: default;
+  font: 100%/1.5 sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+/* specify the text decoration of anchors */
+/* line 165, ../scss/_reset.scss */
+a {
+  text-decoration: none;
+}
+
+/* specify the alignment of media elements */
+/* line 171, ../scss/_reset.scss */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/* specify the background color of form elements */
+/* line 182, ../scss/_reset.scss */
+button,
+input,
+select,
+textarea {
+  background-color: transparent;
+}
+
+/* specify the inherited color and font of form elements */
+/* line 191, ../scss/_reset.scss */
+button,
+input,
+select,
+textarea {
+  color: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+/* specify the minimum height of form elements */
+/* line 203, ../scss/_reset.scss */
+button,
+[type="button"],
+[type="date"],
+[type="datetime"],
+[type="datetime-local"],
+[type="email"],
+[type="month"],
+[type="number"],
+[type="password"],
+[type="reset"],
+[type="search"],
+[type="submit"],
+[type="tel"],
+[type="text"],
+[type="time"],
+[type="url"],
+[type="week"],
+select,
+textarea {
+  min-height: 1.5em;
+}
+
+/* specify the font family of code elements */
+/* line 227, ../scss/_reset.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+}
+
+/* specify the list style of nav lists */
+/* line 236, ../scss/_reset.scss */
+nav ol,
+nav ul {
+  list-style: none;
+}
+
+/* specify the standard appearance of selects */
+/* line 243, ../scss/_reset.scss */
+select {
+  -moz-appearance: none;
+  /* Firefox 40+ */
+  -webkit-appearance: none;
+}
+
+/* line 248, ../scss/_reset.scss */
+select::-ms-expand {
+  display: none;
+  /* Edge 12+, Internet Explorer 11- */
+}
+
+/* line 252, ../scss/_reset.scss */
+select::-ms-value {
+  color: currentColor;
+  /* Edge 12+, Internet Explorer 11- */
+}
+
+/* specify the border styling of tables */
+/* line 258, ../scss/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* specify the resizability of textareas */
+/* line 265, ../scss/_reset.scss */
+textarea {
+  resize: vertical;
+}
+
+/* specify the background color, font color, and drop shadow of text selections */
+/* line 271, ../scss/_reset.scss */
+::-moz-selection {
+  background-color: #b3d4fc;
+  /* required when declaring ::selection */
+  color: #4c2b03;
+  text-shadow: none;
+}
+
+/* line 277, ../scss/_reset.scss */
+::selection {
+  background-color: #b3d4fc;
+  /* required when declaring ::selection */
+  color: #4c2b03;
+  text-shadow: none;
+}
+
+/* specify the progress cursor of updating elements */
+/* line 285, ../scss/_reset.scss */
+[aria-busy="true"] {
+  cursor: progress;
+}
+
+/* specify the pointer cursor of trigger elements */
+/* line 291, ../scss/_reset.scss */
+[aria-controls] {
+  cursor: pointer;
+}
+
+/* specify the unstyled cursor of disabled, not-editable, or otherwise inoperable elements */
+/* line 297, ../scss/_reset.scss */
+[aria-disabled] {
+  cursor: default;
+}
+
+/* specify the style of visually hidden yet accessible elements */
+/* line 303, ../scss/_reset.scss */
+[hidden][aria-hidden="false"] {
+  clip: rect(0 0 0 0);
+  display: inherit;
+  position: absolute;
+}
+
+/* line 309, ../scss/_reset.scss */
+[hidden][aria-hidden="false"]:focus {
+  clip: auto;
+}
+
+/*# sourceMappingURL=sanitize.css.map */
+/* line 3, ../scss/common.scss */
+*::selection {
+  background-color: #5fdaff;
+  color: #fff;
+}
+
+/* line 8, ../scss/common.scss */
+*::-moz-selection {
+  background-color: #5fdaff;
+}
+
+@media screen and (min-width: 540px) {
+  /* line 15, ../scss/common.scss */
+  body {
+    background-color: #000;
+    min-height: 660px;
+    position: relative;
+  }
+
+  /* line 21, ../scss/common.scss */
+  #gg {
+    position: relative;
+    display: none;
+  }
+
+  /* line 24, ../scss/common.scss */
+  #cover {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+    background-color: #010fff;
+    width: 100%;
+    height: 100%;
+    animation: coverani 1s ease forwards;
+  }
+
+  @keyframes coverani {
+    100% {
+      width: 0%;
+    }
+  }
+  @-moz-keyframes coverani {
+    100% {
+      width: 0%;
+    }
+  }
+  @-webkit-keyframes coverani {
+    100% {
+      width: 0%;
+    }
+  }
+  /* line 29, ../scss/common.scss */
+  .main {
+    background-image: url(../img/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+  }
+  /* line 37, ../scss/common.scss */
+  .main .header {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #fff;
+    letter-spacing: 0.05em;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  /* line 49, ../scss/common.scss */
+  .main .header .bold {
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  /* line 56, ../scss/common.scss */
+  .main .message {
+    font-size: 28px;
+    line-height: 1.6;
+    padding: 60px 10%;
+    margin-left: -52px;
+    color: #fff;
+    letter-spacing: 0.05em;
+    font-family: "Yu Gothic", YuGothic,  sans-serif;
+    font-weight: bold;
+  }
+  /* line 66, ../scss/common.scss */
+  .main .message p:before {
+    content: "\1F44B";
+    font-size: 42px;
+    line-height: 1.6;
+    padding-right: 5px;
+  }
+
+  /* line 77, ../scss/common.scss */
+  .skill {
+    margin: 40px 10% 0 10%;
+  }
+  /* line 80, ../scss/common.scss */
+  .skill .h2-title {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #fff;
+    letter-spacing: 0.05em;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-weight: normal;
+    font-style: italic;
+  }
+  /* line 90, ../scss/common.scss */
+  .skill .skill-list {
+    margin-top: 14px;
+  }
+  /* line 93, ../scss/common.scss */
+  .skill .skill-list li {
+    list-style: none;
+    font-size: 24px;
+    line-height: 1.6;
+    color: #fff;
+    letter-spacing: 0.05em;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    display: inline-block;
+  }
+  /* line 105, ../scss/common.scss */
+  .skill .skill-list li :after {
+    content: "/";
+    margin: 0 5px;
+  }
+  /* line 110, ../scss/common.scss */
+  .skill .skill-list a {
+    color: #fff;
+    background-color: rgba(255, 245, 0, 0);
+    padding: 0px 0px;
+    transition-timing-function: cubic-bezier(0, 0, 0.5, 2.55);
+    transition-property: background-color padding;
+    transition-duration: 0.1s;
+    transition-delay: 0.1s;
+  }
+  /* line 121, ../scss/common.scss */
+  .skill .skill-list a:hover {
+    background-color: rgba(255, 245, 0, 0.5);
+    padding: 5px 5px;
+  }
+
+  /* line 132, ../scss/common.scss */
+  .works {
+    margin: 50px 10% 0 10%;
+  }
+  /* line 135, ../scss/common.scss */
+  .works .h2-title {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #fff;
+    letter-spacing: 0.05em;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-weight: normal;
+    font-style: italic;
+  }
+  /* line 145, ../scss/common.scss */
+  .works .works-list {
+    margin-top: 14px;
+  }
+  /* line 148, ../scss/common.scss */
+  .works .works-list li {
+    list-style: none;
+    font-size: 32px;
+    line-height: 1.6;
+    color: #fff;
+    letter-spacing: 0.05em;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    display: inline-block;
+  }
+  /* line 160, ../scss/common.scss */
+  .works .works-list li :after {
+    content: "/";
+    margin: 0 5px;
+  }
+  /* line 165, ../scss/common.scss */
+  .works .works-list a {
+    color: #fff;
+    background-color: rgba(255, 245, 0, 0);
+    padding: 0px 0px;
+    transition-timing-function: cubic-bezier(0, 0, 0.5, 2.55);
+    transition-property: background-color padding;
+    transition-duration: 0.1s;
+    transition-delay: 0.1s;
+  }
+  /* line 176, ../scss/common.scss */
+  .works .works-list a:hover {
+    background-color: rgba(255, 245, 0, 0.5);
+    padding: 5px 5px;
+  }
+
+  /* line 187, ../scss/common.scss */
+  .contact a {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 80px;
+    color: #64c8f0;
+    background-color: #e1ebf5;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.6;
+    padding-top: 20px;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 24px;
+    transition-timing-function: cubic-bezier(0, 0, 0, 2.22);
+    transition-property: height background-color;
+    transition-duration: 0.1s;
+    transition-delay: 0.1s;
+  }
+
+  /* line 209, ../scss/common.scss */
+  .contact a:hover {
+    height: 90px;
+    background-color: white;
+  }
+
+  /* line 214, ../scss/common.scss */
+  .displayNon {
+    display: none;
+  }
+}
+@media screen and (max-width: 539px) {
+  /* line 225, ../scss/common.scss */
+  body {
+    background-color: #000;
+    min-height: 660px;
+    position: relative;
+  }
+
+  /* line 231, ../scss/common.scss */
+  #gg {
+    position: relative;
+    display: none;
+  }
+
+  /* line 234, ../scss/common.scss */
+  #cover {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+    background-color: #010fff;
+    width: 100%;
+    height: 100%;
+    animation: coverani 1s ease forwards;
+  }
+
+  @keyframes coverani {
+    100% {
+      width: 0%;
+    }
+  }
+  @-moz-keyframes coverani {
+    100% {
+      width: 0%;
+    }
+  }
+  @-webkit-keyframes coverani {
+    100% {
+      width: 0%;
+    }
+  }
+  /* line 240, ../scss/common.scss */
+  .main {
+    background-image: url(../img/bg_sp.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+  }
+  /* line 246, ../scss/common.scss */
+  .main .header {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #fff;
+    letter-spacing: 0.05em;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    position: absolute;
+    top: 10px;
+    left: 7%;
+  }
+  /* line 258, ../scss/common.scss */
+  .main .header .bold {
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  /* line 265, ../scss/common.scss */
+  .main .message {
+    font-size: 32px;
+    line-height: 1.6;
+    padding: 70px 10% 40px;
+    margin-left: -20px;
+    color: #fff;
+    letter-spacing: 0.05em;
+    font-family: "Yu Gothic", YuGothic,  sans-serif;
+    font-weight: bold;
+  }
+  /* line 275, ../scss/common.scss */
+  .main .message p:before {
+    content: "\1F44B";
+    font-size: 42px;
+    line-height: 1;
+    padding-right: 5px;
+  }
+
+  /* line 284, ../scss/common.scss */
+  .skill {
+    margin: 0px 7% 0 7%;
+  }
+  /* line 287, ../scss/common.scss */
+  .skill .h2-title {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #fff;
+    letter-spacing: 0.05em;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-weight: normal;
+    font-style: italic;
+  }
+  /* line 297, ../scss/common.scss */
+  .skill .skill-list {
+    margin-top: 14px;
+  }
+  /* line 300, ../scss/common.scss */
+  .skill .skill-list li {
+    list-style: none;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #fff;
+    letter-spacing: 0.05em;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    display: inline-block;
+  }
+  /* line 312, ../scss/common.scss */
+  .skill .skill-list li :after {
+    content: "/";
+    margin: 0 5px;
+  }
+  /* line 317, ../scss/common.scss */
+  .skill .skill-list a {
+    color: #fff;
+    background-color: rgba(255, 245, 0, 0);
+    padding: 0px 0px;
+    transition-timing-function: cubic-bezier(0, 0, 0.5, 2.55);
+    transition-property: background-color padding;
+    transition-duration: 0.1s;
+    transition-delay: 0.1s;
+  }
+  /* line 328, ../scss/common.scss */
+  .skill .skill-list a:hover {
+    background-color: rgba(255, 245, 0, 0.5);
+    padding: 5px 5px;
+  }
+
+  /* line 339, ../scss/common.scss */
+  .works {
+    margin: 50px 7% 0px 7%;
+    padding: 0 0 70px 0;
+  }
+  /* line 343, ../scss/common.scss */
+  .works .h2-title {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #fff;
+    letter-spacing: 0.05em;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-weight: normal;
+    font-style: italic;
+  }
+  /* line 353, ../scss/common.scss */
+  .works .works-list {
+    margin-top: 14px;
+  }
+  /* line 356, ../scss/common.scss */
+  .works .works-list li {
+    list-style: none;
+    font-size: 24px;
+    line-height: 2;
+    color: #fff;
+    letter-spacing: 0.05em;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    display: inline-block;
+  }
+  /* line 368, ../scss/common.scss */
+  .works .works-list li :after {
+    content: "/";
+    margin: 0 5px;
+  }
+  /* line 373, ../scss/common.scss */
+  .works .works-list a {
+    color: #fff;
+    background-color: rgba(255, 245, 0, 0);
+    padding: 0px 0px;
+    transition-timing-function: cubic-bezier(0, 0, 0.5, 2.55);
+    transition-property: background-color padding;
+    transition-duration: 0.1s;
+    transition-delay: 0.1s;
+  }
+  /* line 384, ../scss/common.scss */
+  .works .works-list a:hover {
+    background-color: rgba(255, 245, 0, 0.5);
+    padding: 5px 5px;
+  }
+  /* line 392, ../scss/common.scss */
+  .works .displayNon {
+    display: block;
+  }
+
+  /* line 400, ../scss/common.scss */
+  .contact a {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    color: #64c8f0;
+    background-color: #e1ebf5;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.6;
+    padding-top: 7px;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 24px;
+    transition-timing-function: cubic-bezier(0, 0, 0, 2.22);
+    transition-property: height background-color;
+    transition-duration: 0.1s;
+    transition-delay: 0.1s;
+  }
+}
